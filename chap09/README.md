@@ -36,7 +36,7 @@
 # 하이퍼바이저 모드:
     ![image](https://github.com/CW129/CS_OS_study/assets/104714337/398d32dd-fbbb-45c8-9f54-28439536a2af)
 ## Trap && Emulation
-#### 전가상화
+#### 전가상화 (bare-metal hypervisor, full virtualization)
     하이퍼바이저는 Root모드에서 실행되고 vm은 Non-Root모드에서 실행됨
     vm에서 특정 행동(명령)이 실행될때 trap이 발생 -> trap 핸들러가 VM exit 명령을 실행해 하이퍼바이저가 명령을 실행하도록함
     하이퍼바이저에서 에뮬레이션이 많이 발생됨으로 성능이 저하됨   
