@@ -32,23 +32,33 @@
 # 운영체제 이중 모드
     유저 모드: 사용자가 접근할 수 있는 영역을 제한(자원에 접근 불가)
     커널 모드: 모든 자원에 접근, 명령이 가능
-   
+ 
+ #### 보호 링    
+![image](https://github.com/CW129/CS_OS_study/assets/104714337/dbf25c85-d353-4ca7-bf45-360ae7cbe226)    
+
+    CPU의 동작 레벨 
+        Ring이라는 실행레벨이 있으며 0~3까지의 권한이 있음(번호가 낮을수록 권한이 높음)
+              커널모드는 Ring-0, 유저모드는 Ring-3에서 실행. Ring-1, Ring-2에선 드라이버가 실행됨
 # 하이퍼바이저 모드:
 
 ## Trap && Emulation
-#### 전가상화 (bare-metal hypervisor, full virtualization)
+### 전가상화 (bare-metal hypervisor, full virtualization)
 ![image](https://github.com/CW129/CS_OS_study/assets/104714337/398d32dd-fbbb-45c8-9f54-28439536a2af)
 
     하이퍼바이저는 Root모드에서 실행되고 vm은 Non-Root모드에서 실행됨
     vm에서 특정 행동(명령)이 실행될때 trap이 발생 -> trap 핸들러가 VM exit 명령을 실행해 하이퍼바이저가 명령을 실행하도록함
     하이퍼바이저에서 에뮬레이션이 많이 발생됨으로 성능이 저하됨   
     * 에뮬레이션 = 컴퓨터, 주변 장치의 기능을 다른 컴퓨터에서 구현하는 것
-#### 반가상화 (para-virtualization)
+### 반가상화 (para-virtualization)
 ![image](https://github.com/CW129/CS_OS_study/assets/104714337/c47ed993-ab6c-400c-a461-0476573d6b4d)
 
-
-#### 반가상화 (para-virtualization)
+    OS에서 어플리케이션이 커널에 시스템콜을 보내는것과 동일
+    vm이(guest os) 하이퍼바이저에 요청(hyper call), hyper call을 통해 자원에 접근
     
+ #### 전가상화와 반가상화의 차이
+    전가상화: 모든 명령어를 가상화
+    반가상화: 꼭 필요한 CPU 명령어만 가상화
+    * 하드웨어 가상화에서 필요한게 VMX
 # 운영체제가 부팅되는 과정
 ![image](https://github.com/CW129/CS_OS_study/assets/104714337/a9025782-9005-4e89-a654-7729254c0885)
 ## OS 개념의 부팅
@@ -61,8 +71,3 @@
 ## 펌웨어 개념의 부팅
     power on/off 신호에 따라 메모리(비휘발성)에 적재된 어플리케이션을 실행   
     보통 단순한 시스템에 사용
-    
-# 프로세스 관리
-    프로세스 = 메모리에 프로그램이 적재되었을때
-    일반적으론 CPU가 한번의 하나의 프로세스만 실행 가능함으로(구식 하드웨어)
-    현재는 CPU에 코어가 하는(멀티 코어) 방법으로 여러개의 프로세스 실행 가능
