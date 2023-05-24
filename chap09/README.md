@@ -34,14 +34,20 @@
     커널 모드: 모든 자원에 접근, 명령이 가능
    
 # 하이퍼바이저 모드:
-    ![image](https://github.com/CW129/CS_OS_study/assets/104714337/398d32dd-fbbb-45c8-9f54-28439536a2af)
+
 ## Trap && Emulation
 #### 전가상화 (bare-metal hypervisor, full virtualization)
+![image](https://github.com/CW129/CS_OS_study/assets/104714337/398d32dd-fbbb-45c8-9f54-28439536a2af)
+
     하이퍼바이저는 Root모드에서 실행되고 vm은 Non-Root모드에서 실행됨
     vm에서 특정 행동(명령)이 실행될때 trap이 발생 -> trap 핸들러가 VM exit 명령을 실행해 하이퍼바이저가 명령을 실행하도록함
     하이퍼바이저에서 에뮬레이션이 많이 발생됨으로 성능이 저하됨   
     * 에뮬레이션 = 컴퓨터, 주변 장치의 기능을 다른 컴퓨터에서 구현하는 것
-#### 반가상화
+#### 반가상화 (para-virtualization)
+![image](https://github.com/CW129/CS_OS_study/assets/104714337/c47ed993-ab6c-400c-a461-0476573d6b4d)
+
+
+#### 반가상화 (para-virtualization)
     
 # 운영체제가 부팅되는 과정
 ![image](https://github.com/CW129/CS_OS_study/assets/104714337/a9025782-9005-4e89-a654-7729254c0885)
