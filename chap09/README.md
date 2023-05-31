@@ -95,3 +95,9 @@
 
     커널 소스코드가 빌드되어 /boot 디렉토리에 위치함
     booting process가 실행될때 /boot/vmlinuz(kernel image)를 메모리에 적재, 실행
+
+
+* kthreadd
+* kworker
+* ksoftirqd
+https://www.crocus.co.kr/1255 참고자료
