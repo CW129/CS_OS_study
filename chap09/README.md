@@ -73,11 +73,6 @@
     보통 단순한 시스템에 사용
     
 # Kernal
-### 커널 소스코드 디렉토리 구조
-![image](https://github.com/CW129/CS_OS_study/assets/104714337/3ae2067c-9e27-4f85-ad62-5831e940c10b)
-
-    커널 소스코드가 빌드되어 /boot 디렉토리에 위치함
-    booting process가 실행될때 /boot/vmlinuz(kernel image)를 메모리에 적재, 실행
     
 ### 커널 구조
 ![image](https://github.com/CW129/CS_OS_study/assets/104714337/03c1e517-1e1c-4130-9dc5-ddbe00440346)
@@ -94,3 +89,9 @@
 
     혼합형 커널(Hybrid Kernel): 단일형과 마이크로 커널을 혼합하여 사용
     성능이 중요한 서비스는 단일형 커널 구조, 이외의 서비스는 마이크로 커널과 같이 응용 프로그램 계층에서 
+
+### 커널 소스코드 디렉토리 구조
+![image](https://github.com/CW129/CS_OS_study/assets/104714337/3ae2067c-9e27-4f85-ad62-5831e940c10b)
+
+    커널 소스코드가 빌드되어 /boot 디렉토리에 위치함
+    booting process가 실행될때 /boot/vmlinuz(kernel image)를 메모리에 적재, 실행
