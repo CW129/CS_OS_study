@@ -71,3 +71,11 @@
 ### 펌웨어 개념의 부팅
     power on/off 신호에 따라 메모리(비휘발성)에 적재된 어플리케이션을 실행   
     보통 단순한 시스템에 사용
+    
+# Kernal
+### 커널 소스코드 디렉토리 구조 ###
+![image](https://github.com/CW129/CS_OS_study/assets/104714337/3ae2067c-9e27-4f85-ad62-5831e940c10b)
+
+    저 소스코드가 빌드되어 /boot 디렉토리에 위치함
+    booting process가 실행될때 /boot/vmlinuz(kernel image)를 메모리에 적재, 실행
+    
