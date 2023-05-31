@@ -71,3 +71,27 @@
 ### 펌웨어 개념의 부팅
     power on/off 신호에 따라 메모리(비휘발성)에 적재된 어플리케이션을 실행   
     보통 단순한 시스템에 사용
+    
+# Kernal
+    
+### 커널 구조
+![image](https://github.com/CW129/CS_OS_study/assets/104714337/03c1e517-1e1c-4130-9dc5-ddbe00440346)
+
+    단일형 커널(Monolithic Kernel): 운영체제에서 일어나는 모든 작업을 커널이 처리
+    안정성이 다소 떨어짐
+
+![image](https://github.com/CW129/CS_OS_study/assets/104714337/0e4d58a5-72e9-4ba3-8a88-2d5a4dbbd097)
+
+    마이크로 커널(Micro Kernel): 모듈을 분할하여 응용 프로그램 계층에서 제공하는 방식
+    모듈이 분할 되어있어 특정 모듈이 중지되어도 시스템 전체에 영향을 피할 수 있다
+    
+![image](https://github.com/CW129/CS_OS_study/assets/104714337/3619f2c1-7b89-4bb9-8a4e-adea86d34b26)
+
+    혼합형 커널(Hybrid Kernel): 단일형과 마이크로 커널을 혼합하여 사용
+    성능이 중요한 서비스는 단일형 커널 구조, 이외의 서비스는 마이크로 커널과 같이 응용 프로그램 계층에서 
+
+### 커널 소스코드 디렉토리 구조
+![image](https://github.com/CW129/CS_OS_study/assets/104714337/3ae2067c-9e27-4f85-ad62-5831e940c10b)
+
+    커널 소스코드가 빌드되어 /boot 디렉토리에 위치함
+    booting process가 실행될때 /boot/vmlinuz(kernel image)를 메모리에 적재, 실행
