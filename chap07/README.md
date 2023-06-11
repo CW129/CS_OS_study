@@ -30,14 +30,14 @@
         바늘
         
 
-![7.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/68cad527-fc14-4933-9ea1-00a8845d2273/7.jpg)
+![하드디스크.jpg](./images/1.jpg)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/30427015-0e97-44a6-b718-b30fbed89e4b/Untitled.png)
+![디스크암](./images/2.png)
 
 - 컴퓨터가 플래터에 데이터를 저장하는 방법
     
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f3dbb5d6-2056-4f6a-8d8d-c13ba5d608bc/Untitled.png)
+    ![플래터](./images/3.png)
     
 
 - 섹터
@@ -77,7 +77,7 @@
     
     플래시 메모리(Flash Memory)는 반도체 칩 내부의 전자회로의 형태에 따라 직렬로 연결된 낸드 플래시와 병렬로 연결된 노어플래시로 구분된다. 우리가 주로 사용하는 메모리는  NAND플래시 메모리다
     
-    - NAND ([https://metar.tistory.com/entry/NAND-flash란-무엇인가](https://metar.tistory.com/entry/NAND-flash%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80))
+    - NAND (![NAND-flash란-무엇인가](./images/4.png))
         
         낸드 플래시는 저장 단위인 셀을 수직으로 배열하는 구조이기 때문에 좁은 면적에 많은 셀을 만들 수 있어 대용량화가 가능하다. (이론적으로 한 셀당 면적이 NOR형의 40% 수준)
         또한 데이터를 순차적으로 찾아가 읽기 때문에 노어플래시보다 읽기 속도는 느리지만 별도로 셀의 주소를 기억할 필요가 없어, 쓰기 속도는 훨씬 빠르다. 
@@ -86,7 +86,7 @@
             
             CONTROL gate에 강한 전압을 가하게 되면, Source와 Drain 사이에 흐르는 전자가 tox(터널링 옥사이드)라고 부르는 절연층을 전자가 터널링해서 Floating gate에 쌓이게 됩니다. 그리고 이 전자는 정보를 저장하게 됩니다.
             
-            ![img1.daumcdn.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F2FIvk%2Fbtrb83rEHFc%2Fe8Fpk9RSkBijYJeRfmJsGK%2Fimg.png)
+            ![img1.daumcdn.png](./images/5.png)
             
         - 셀
             - 셀이란, 플래시 메모리에서 데이터를 저장하는 가장 작은 단위.
@@ -95,7 +95,7 @@
         
         - 셀 내에 bit 수를 확장한 개념
             
-            ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbFPDyp%2Fbtrb9QliGBD%2FDKdSfgkSVwpfuXvrSvk1K1%2Fimg.png)
+            ![플래시메모리](./images/6.png)
             
             | 구분  | SLC | MLC | TLC |
             | --- | --- | --- | --- |
@@ -107,8 +107,6 @@
         - 플래시 메모리 구성 단위
             
             셀 < 페이지 < 블록 < 플레인 < 다이로 구성된다.
-            
-            ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d5bf6b11-a7c5-4ad3-b96f-c46440075895/Untitled.png)
             
             - 플래시메모리에서 읽기와 쓰기는 페이지 단위로 이루어진다.
             하지만 삭제는 블록단위로 이루어짐
@@ -132,7 +130,7 @@ RIAD 0, RIAD 2, RIAD 3, RIAD 4, RIAD 5, RIAD 6이 있고, 이로부터 파생된
 
 - RAID 0
     
-    ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F99CC91485B8811C036)
+    ![레이드0](./images/7.jpg)
     
     Striping (스트라이핑) 이라고도 부르는 방식입니다.
     
@@ -156,7 +154,7 @@ RIAD 0, RIAD 2, RIAD 3, RIAD 4, RIAD 5, RIAD 6이 있고, 이로부터 파생된
     
 - RAID 1
     
-    ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F9921D4485B8811C030)
+    ![레이드1](./images/8.jpg)
     
     Mirroring (미러링) 이라고도 부르는 방식 입니다.
     
@@ -191,7 +189,7 @@ RIAD 0, RIAD 2, RIAD 3, RIAD 4, RIAD 5, RIAD 6이 있고, 이로부터 파생된
 
 - RAID 2
     
-   ![image](https://t1.daumcdn.net/cfile/tistory/990215485B8811C01C)
+   ![레이드2](./images/9.jpg)
     
     현재는 사용하지 않는 RAID Level 입니다.
     
@@ -205,7 +203,7 @@ RIAD 0, RIAD 2, RIAD 3, RIAD 4, RIAD 5, RIAD 6이 있고, 이로부터 파생된
     
 - RAID 3
     
-    ![image](https://t1.daumcdn.net/cfile/tistory/99C611485B8811C137)
+    ![레이드3](./images/10.jpg)
     
     현재는 사용하지 않는 RAID Level 입니다.
     
@@ -221,7 +219,7 @@ RIAD 0, RIAD 2, RIAD 3, RIAD 4, RIAD 5, RIAD 6이 있고, 이로부터 파생된
     
 - RAID 4
     
-    ![image](https://t1.daumcdn.net/cfile/tistory/9952CD485B8811C12B)
+    ![레이드4](./images/11.jpg)
     
     현재는 (거의) 사용하지 않는 RAID Level 입니다.
     
@@ -243,7 +241,7 @@ RIAD 0, RIAD 2, RIAD 3, RIAD 4, RIAD 5, RIAD 6이 있고, 이로부터 파생된
     
 - RAID 5
     
-    ![image](https://t1.daumcdn.net/cfile/tistory/993A7A485B8811C117)
+    ![레이드5](./images/12.jpg)
     
     제일 사용 빈도가 높은 RAID Level 입니다.
     
@@ -263,7 +261,7 @@ RIAD 0, RIAD 2, RIAD 3, RIAD 4, RIAD 5, RIAD 6이 있고, 이로부터 파생된
     
 - RAID 6
     
-    ![image](https://t1.daumcdn.net/cfile/tistory/99E746485B8811C21E)
+    ![레이드6](./images/13.jpg)
     
     RAID 5에서 성능, 용량을 좀 더 줄이고, 안정성을 좀 더 높인 RAID Level 입니다.
     
